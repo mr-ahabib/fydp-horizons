@@ -22,7 +22,7 @@
                         <a class="nav-link active" aria-current="page" href="homepage.php">Home</a>
                         <a class="nav-link active" aria-current="page" href="#">Publish Paper</a>
                         <a class="nav-link active" aria-current="page" href="Facultylist.php">Mentors</a>
-                        <a class="nav-link active" aria-current="page" href="Notes.php">Note</a>
+                        <a class="nav-link active" aria-current="page" href="Note.php">Note</a>
                         <a class="nav-link active" aria-current="page" href="#">Notifications</a>
                         <a class="nav-link active" aria-current="page" href="#">Contact</a>
                     </li>
