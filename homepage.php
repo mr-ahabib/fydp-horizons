@@ -2,95 +2,24 @@
 session_start(); 
 
 include('db.php'); 
-
-
-
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="homepage.css">
-</head>
-
-<body>
-    <div id="mainDiv">
-
-        <div id="header">
-            <div class="logo">
-                <a href="https://www.uiu.ac.bd/"><img width="70px" src="./img/uiu_logo.png"></a>
-            </div>
-
-            <div id="text_div">
-                <div class="label"><p class="friends-loan-cloud">UIU FYDP Horizon</p></div>
-            </div>
-
-
-            <div id="header_icons_2">
-                <div class="photo_1"> 
-                    <a href="#"><img src="./img/mess.webp" alt="photo_2"></a> 
-                </div>
-                <div class="photo_2"> 
-                    <a href="#"><img src="./img/images.png" alt="photo_2"></a> 
-                </div>
-            </div>
-        </div>
-
-        <script>
-            window.onscroll = function() {myFunction()};
-            
-            var navbar = document.getElementById("header");
-            var sticky = navbar.offsetTop;
-            
-            function myFunction() {
-              if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-              } else {
-                navbar.classList.remove("sticky");
-              }
-            }
-            </script>
-
-
-        <div class="left_div">
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <br><br><br><br><br><br>
-                <a href="homepage.php">Home</a>
-                <a href="apply.php">Application</a>
-                <a href="#">Published Papers</a>
-                <a href="Facultylist.php">Faculties</a>
-                <a href="request.php">Requests</a>
-                <a href="members.php">Members</a>
-                <a href="#">Notifications</a>
-                <a href="group.php">Create Group</a>
-                <br><br><br><br><br><br><br><br>
-                <a href="#">Settings</a>
-            </div>
+    <title>UIU Fydp Horizon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Styles/apply.css">
     
-            <script>
-                function openNav() {
-                  document.getElementById("mySidenav").style.width = "250px";
-                  document.getElementById("mainDiv").style.marginLeft = "250px";
-                  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-                }
-                
-                function closeNav() {
-                  document.getElementById("mySidenav").style.width = "0";
-                  document.getElementById("mainDiv").style.marginLeft= "0";
-                  document.body.style.backgroundColor = "white";
-                }
-            </script>
-        </div>
-
-
+</head>
+<body>
+    
+   <div>
+    <?php include('navbar.php'); ?>
+   </div>
+    <br> <br><br><br><br>
 
         <div class="center_div1">
     <?php

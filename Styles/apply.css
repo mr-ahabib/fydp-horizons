@@ -154,7 +154,7 @@ body{
     width: 70%;
     margin-top: 2%;
     height: 50%;
-    left: 100px;
+    margin-left: 20%;
     padding-top: 2%;
     background-color: transparent;
     display: inline-block;
@@ -311,3 +311,7 @@ body{
 .selected-option {
   /* Style as needed */
 }
+
+
+
+
