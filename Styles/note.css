@@ -1,0 +1,455 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
+body{
+    margin: 0;
+    padding: 0;
+ }
+ #mainDiv{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    transition: margin-left .5s;
+ }
+
+ #header{
+    background-color: rgb(24, 121, 249);
+    display: flex;
+    width: 100%;
+    height: 60px;
+    top: 0;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .mainDiv {
+    padding-top: 60px;
+  }
+
+.logo{
+    background-color: rgb(24, 121, 249);
+    float: left;
+    height: 60px;
+    width: 80px;
+}
+
+#text_div{
+    background-color: rgb(24, 121, 249);
+    width: 220px;
+    height: 60px;
+}
+
+.label .friends-loan-cloud {
+    position: fixed;
+    width: 195px;
+    left: 95px;
+    right: 5px;
+    text-align: center;
+    background: linear-gradient(180deg, rgb(255, 255, 255) 50.71%, rgba(85.25, 107.3, 100.68, 0) 100%);
+    -webkit-background-clip: text !important;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-weight: bold;
+    color: transparent;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+
+
+#header_icons_2{
+    position: fixed;
+    width: 250px;
+    height: 50px;
+    top: 5px;
+    left: 1280px;
+    background-color: transparent;
+}
+.photo_1 a{ 
+    float: left;
+	width: 18%;
+    padding-left: 20px;
+	padding-right: 25px;
+    border-radius: 50%; 
+} 
+.photo_1 img { 
+    width: 100%; 
+    height: 100%; 
+} 
+.photo_1 a:hover{
+    background-color: transparent;
+}
+.photo_2 a{ 
+    float: left;
+	width: 18%;
+    padding-left: 20px;
+	padding-right: 10px;
+    border-radius: 50%; 
+} 
+.photo_2 img { 
+    width: 100%; 
+    height: 100%; 
+} 
+.photo_2 a:hover{
+    background-color: transparent;
+}
+
+
+
+.left_div{
+    background-color: rgba(200, 200, 200, 1);
+    position: fixed;
+    width: 80px;
+    height: 100%;
+    top: 60px;
+    left: 0;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    font-weight: bold;
+    margin-left: 50px;
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+ 
+
+
+.center_div1{
+    width: 70%;
+    margin-top: 2%;
+    height: 50%;
+    margin-left: 20%;
+    padding-top: 2%;
+    background-color: transparent;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  @media screen and (max-width: 500px) { 
+  
+    .center_div1 { 
+        width: 80%; 
+    } 
+} 
+
+  
+  .squareS {
+    justify-self: center;
+    width: 70%;
+    height: 320px;
+    border-radius: 20px;
+    background-color: rgb(230, 230, 230);
+    margin-bottom: 20px ;
+  }
+  .squareS:first-child {
+    margin-top: 20px; /* Add margin only above for the first one */
+}
+
+  .button {
+    background-color: rgb(24, 121, 249);
+    border: white 2px solid;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+  }
+  .button .button1{
+    font-size: 24px;
+  }
+
+
+
+.profile_div{
+  background-color: rgb(230, 230, 230);
+  position: fixed;
+  display: inline-block;
+  width: 23%;
+  height: 57%;
+  top: 150px;
+  left: 1120px;
+  border-radius: 20px;
+}
+ 
+@media screen and (max-width: 500px) { 
+  
+  .profile_div { 
+    width: 80%; 
+  } 
+} 
+
+
+
+
+
+
+/* form center  */
+.center_div1 h2 {
+  color: rgb(24, 121, 249);
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.center_div1 label {
+  display: block;
+  margin-top: 15px;
+}
+
+.center_div1 select {
+  width: 77%;
+  padding: 8px;
+  margin-top: 8px;
+}
+
+.center_div1 table {
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 10px;
+  border-collapse: collapse;
+}
+
+.center_div1 th, .center_div1 td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.center_div1 th {
+  background-color: rgb(24, 121, 249);
+  color: white;
+}
+
+.center_div1 tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.center_div1 div {
+  margin-top: 20px;
+}
+
+.center_div1 span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.center_div1 input[type="text"],
+.center_div1 input[type="tel"],
+.center_div1 input[type="email"] {
+  width: 80%;
+  padding: 8px;
+  margin-top: 8px;
+}
+
+.center_div1 input[type="submit"] {
+  background-color: rgb(24, 121, 249);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+/* note */
+
+/* Add this to your existing CSS */
+
+/* styles.css */
+
+/* styles.css */
+
+.center_div1 {
+    text-align: center;
+    margin-top: 2%;
+    height: 50%;
+    margin-left: 5%;
+    padding-top: 2%;
+    background-color: transparent;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 70%;
+    margin-top: 2%;
+    height: 50%;
+    margin-left: 20%;
+    padding-top: 2%;
+    background-color: transparent;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-lg-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: .5rem 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Add Note Dialog */
+.dialog {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.dialog-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Note Styles */
+.note {
+    background-color: #f2f2f2;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.note h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.note p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.note-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.note-buttons button {
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.view-button {
+    background-color: blue;
+    color: white;
+}
+
+.delete-button {
+    background-color: red;
+    color: white;
+}
+
+.green-button {
+    background-color: green;
+    color: white;
+}
+
+textarea#noteDescription {
+    height: 282px;
+    width: 50%;
+}
