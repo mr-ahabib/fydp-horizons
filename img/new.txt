@@ -1,0 +1,11 @@
+.profile_div{
+  background-color: rgb(230, 230, 230);
+  position: fixed;
+  display: inline-block;
+  width: 20%;
+  height: 55%;
+  top: 150px;
+  left: 1300px;
+  border-radius: 20px 0 0 20px;
+    
+}
