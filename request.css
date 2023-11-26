@@ -125,16 +125,7 @@ body{
 
 
 
-  .form_div{
-    width: 65%;
-    margin-top: 6%;
-    height: 100%;
-    left: 400px;
-    background-color: red;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-  }
+
 .square {
     justify-self: center;
     width: 100%;
@@ -266,3 +257,8 @@ a:hover {
 }
 
 
+input#searchInput {
+  height: 40px;
+  margin-top: -48px;
+  margin-left: 250px;
+}
