@@ -75,7 +75,6 @@
     <div class="container mt-5">
         <h2 class="text-center">Admin Panel</h2> <br> <hr>
 
-        <!-- Add Teacher Button -->
         
         <div class="text-center">
             <button class="btn btn-primary" style="width: 500px;" onclick="toggleAddTeacherForm()">Add Teacher +</button>
@@ -83,7 +82,6 @@
         
                     
 
-        <!-- Add Teacher Form (Initially hidden) -->
         <div id="addTeacherForm" style="display: none;">
             <h2 class="mt-4 mb-4 text-center">Add Teacher</h2>
             <form method="POST" action="tsignup.php">
@@ -110,7 +108,6 @@
             </form>
         </div>
 
-        <!-- Your admin content goes here -->
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
@@ -122,10 +119,9 @@
         }
 
         function addTeacher() {
-            // Add your logic to collect form data and handle the addition of a teacher
-            // For example, make an AJAX request to the backend API
+        
             alert("Teacher added successfully!");
-            // Optionally, you can reset the form or perform other actions
+            
             document.getElementById("addTeacherForm").reset();
         }
     </script>

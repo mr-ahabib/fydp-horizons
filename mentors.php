@@ -10,23 +10,23 @@ include('db.php');
     <title>UIU Fydp Horizon</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
-        /* Custom CSS for table design */
+        
         .table th, .table td {
             text-align: center;
         }
         .navbar-custom {
-            background-color: #42b1fa; /* Change this color to your desired navbar color */
+            background-color: #42b1fa; 
         }
         .navbar-brand {
             text-align: center;
             width: 100%;
-            color: #ffffff; /* Change this color to your desired text color */
+            color: #ffffff; 
         }
         body {
-            background-color: #f8f9fa; /* Change this color to your desired background color */
+            background-color: #f8f9fa; 
         }
         .container {
-            background-color: #ffffff; /* Change this color to your desired container background color */
+            background-color: #ffffff; 
             border-radius: 8px;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -44,7 +44,7 @@ include('db.php');
             </button>
             <a class="navbar-brand" href="#"><h3>UIU Fydp Horizon</h3></a>
 
-            <!-- Updated search form -->
+           
             <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
             </form>
@@ -99,13 +99,13 @@ include('db.php');
                         <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#viewProfileModal">View Profile</button>
                     </td>
                 </tr>
-                <!-- Add more faculty rows as needed -->
+                
             </tbody>
             <?php } ?>
         </table>
     </div>
 
-    <!-- Modal for View Profile -->
+  
     <div class="modal fade" id="viewProfileModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -114,11 +114,11 @@ include('db.php');
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <!-- Add content for the profile here -->
+                  
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <!-- Add additional buttons if needed -->
+                 
                 </div>
             </div>
         </div>
@@ -127,22 +127,22 @@ include('db.php');
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // Get the table and search input element
+        
             const facultyTable = document.getElementById('facultyTable');
             const searchInput = document.getElementById('searchInput');
 
-            // Add event listener for the search input
+          
             searchInput.addEventListener('input', function () {
                 const searchText = searchInput.value.toLowerCase();
 
-                // Loop through each row in the table body
+                
                 const rows = facultyTable.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
                 for (let i = 0; i < rows.length; i++) {
                     const row = rows[i];
                     const facultyName = row.getElementsByTagName('td')[0].innerText.toLowerCase();
                     const facultyField = row.getElementsByTagName('td')[1].innerText.toLowerCase();
 
-                    // Show or hide the row based on the search text in name or field
+                    
                     if (facultyName.includes(searchText) || facultyField.includes(searchText)) {
                         row.style.display = '';
                     } else {

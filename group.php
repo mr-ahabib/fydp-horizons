@@ -3,32 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Group Creating</title>
+    <title>UIU Fydp Horizon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="group.css">
+    
 </head>
-
 <body>
 
-    <div id="main_div">
+<div>
+    <?php include('navbar.php'); ?>
+   </div>
+    <br> <br><br><br><br>
 
-        <div class="header">
-            <a href="https://www.uiu.ac.bd/" class="logo"><img width="70px" src="./img/uiu_logo.png"></a>
-            <a href="#fydpHorizon" class="name">UIU FYDP Horizon</a>
-    
-            <div class="header-right">
-              <a href="#home"><img width="40px" src="./img/mess.webp"></a>
-              <a href="#home"><img width="40px" src="./img/images.png"></a>
-            </div>
-        </div>
-        
-
-
-        <div class="form_div">
             <div class="square">
                 <br>
                 <h1 style="text-align: center; font-weight: bold; color: #3a94dd;">Create a Group</h1>
                   
-                <form action="create.php" method="POST">
+                <form class="innerForm" action="create.php" method="POST">
                 
                     <input class="input" type="text" placeholder="   Group Name" name="gname" id="gname"><br>
                    
@@ -41,12 +32,6 @@
                 
 
             </div>
-        </div>
-
-
-
-    </div>
-    
     
 </body>
 
